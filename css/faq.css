@@ -1,0 +1,266 @@
+/*========================================================
+	Main Style for MQCMI 2022
+=========================================================*/
+/* colors declaration */
+:root {
+    --white: #fff;
+    --black: #000;
+    --main-blue: #1d5fa2;
+    --main-red: #e30000;
+    --gray-bg: #f2f1ef;
+    --footcopy-bg: #04305f;
+    --footcopy-color: #71b5fa;
+    --dark-grey: #393738;
+    --light-grey: #707173;
+    --top-ban-h1: #0081a0;
+    --gray-bg: #e2e4e4;
+  }
+  
+  /* fonts declaration */
+  @font-face {
+    font-family: calibri;
+    src: url('../fonts/calibri.ttf');
+  }
+  
+  @font-face {
+    font-family: calibrib;
+    src: url('../fonts/calibrib.ttf');
+  }
+  
+  @font-face {
+    font-family: coolvetica;
+    src: url('../fonts/coolvetica-rg.otf');
+  }
+  
+  /* end fonts declaration */
+  
+  /* reset */
+  html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, abbr, address, em, img, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, figcaption, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  }
+  ol, ul {
+  list-style: none;
+  }
+  a {
+  text-decoration: none;
+  color: inherit;
+  }
+  *:focus {outline: none;}
+  * {box-sizing: border-box;}
+  input[type='submit']
+  {
+     -webkit-appearance: none;
+     border-radius: 0;
+  }
+  /* end reset */
+  
+  /***********************************************************************************************/
+  
+  /* common layout sections  - ALL common layouts for frame exist in this section */
+  body {
+    font-size: 21px;
+    font-family: 'calibri', sans-serif;
+    font-weight: 400;
+    color: #222;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-family: 'calibri', arial, sans-serif;
+    color: var(--black);
+    font-weight: 500;
+  }
+  
+  
+  /***********************************************************************************************/
+  
+  /* common styling */
+  h1,
+  h2,
+  h3 {
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 65px;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 56px;
+  }
+  
+  h3 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  /* end common styling */
+
+  .pageFull {
+    width: 100%;
+  }
+  
+  .centerSize {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .pageSize {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 1920px) and (max-width: 2559px) {
+    .centerSize {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (min-width: 1301px) and (max-width: 1919px) {
+    .centerSize {
+      width: 85%;
+    }
+  
+    .pageSize {
+      width: 94%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1300px) {
+    .centerSize {
+      width: 90%;
+    }
+  
+    .pageSize {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .centerSize {
+      width: 90%;
+    }
+  
+    .pageSize {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .centerSize {
+      width: 90%;
+    }
+  
+    .pageSize {
+      width: 90%;
+    }
+  }
+
+  /*========================================================
+    FAQ page
+=========================================================*/
+.faqBg{
+  background: url(../faq/faq-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.topBan{
+    text-align: center;
+    font-family: "coolvetica";
+    font-weight: 400;
+    color: var(--top-ban-h1);
+    margin-bottom: 4rem;
+}
+.faqWrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    grid-gap: 5rem;
+}
+.faqBox{
+  margin-bottom: 2.5rem;
+}
+.faqBox .faqHeader{
+  display: flex;
+  align-items: start;
+}
+.faqBox .faqHeader span{
+  font-size: 6rem;
+  font-family: "coolvetica";
+  color: var(--main-red);
+  margin-top: -1.25rem;
+  margin-right: 0.75rem;
+}
+.faqBox .faqHeader h2{
+  font-size: 2.5rem;
+  font-family: "coolvetica";
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+}
+.faqBox p{
+  font-family: "calibri";
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--light-grey);
+}
+.faqBox .qsImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faqBox .qsImage img{
+  width: 300px;
+}
+  
+  @media only screen and (min-width: 1920px) and (max-width: 2559px) {}
+  
+  @media only screen and (min-width: 1301px) and (max-width: 1919px) {
+  
+  
+  }
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1300px) {
+    
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .faqWrap{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 5rem;
+  }
+  .faqBox .faqHeader{
+    margin-bottom: 1rem;
+  }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .faqWrap{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 5rem;
+  }
+  .faqBox .faqHeader{
+    margin-bottom: 1rem;
+  }
+  }
+  
+  @media only screen and (max-width: 479px) {
+    .faqWrap{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 5rem;
+  }
+  .faqBox .faqHeader{
+    margin-bottom: 1rem;
+  }
+  }
+  
