@@ -209,7 +209,6 @@
   font-family: "calibri";
   font-size: 1rem;
   line-height: 1.2;
-  color: var(--light-grey);
 }
 .faqBox .qsImage{
   display: flex;
